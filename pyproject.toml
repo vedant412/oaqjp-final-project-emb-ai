@@ -1,0 +1,2 @@
+[tool.pylint.basic]
+good-names-rgxs = ["^EmotionDetection$"]
