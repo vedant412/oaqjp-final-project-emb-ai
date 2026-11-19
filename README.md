@@ -1,4 +1,4 @@
-# Final Project — Emotion Detector
+# Final project
 
 Emotion Detector is a Python and Flask application for IBM’s Developing AI Applications
 with Python and Flask course. It sends English text to the IBM Skills Network Watson NLP
@@ -72,19 +72,25 @@ Run these commands in the IBM lab and save the command and actual output from ea
 **Task 2 · Import and run the application module**
 
 ```sh
-python -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector('I love this new technology'))"
+python3
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I love this new technology.")
 ```
 
 **Task 3 · Show the formatted result**
 
 ```sh
-python -c "from pprint import pprint; from EmotionDetection.emotion_detection import emotion_detector; pprint(emotion_detector('I am so happy I am doing this'), sort_dicts=False)"
+python3
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am so happy I am doing this")
 ```
 
 **Task 4 · Import directly from the package and call it**
 
 ```sh
-python -c "from EmotionDetection import emotion_detector; print(emotion_detector('I am very sad'))"
+python3
+>>> from EmotionDetection import emotion_detector
+>>> emotion_detector("I hate working long hours")
 ```
 
 For Task 5, save the live test command and its complete output. For Task 8, save the
