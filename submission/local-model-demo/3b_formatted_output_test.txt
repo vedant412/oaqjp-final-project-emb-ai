@@ -1,0 +1,8 @@
+Backend: local DistilRoBERTa model through the Flask test endpoint.
+$ python3
+Python 3.12.10 (InteractiveConsole)
+>>> from EmotionDetection import emotion_detection as backend
+>>> backend.WATSON_URL = "http://127.0.0.1:5079/local-demo-predict"
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am so happy I am doing this")
+{'anger': 0.0011922918492928147, 'disgust': 0.0003628888225648552, 'fear': 0.0003169249976053834, 'joy': 0.981918215751648, 'sadness': 0.0035263600293546915, 'dominant_emotion': 'joy'}

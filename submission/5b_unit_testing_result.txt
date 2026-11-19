@@ -1,0 +1,25 @@
+Unit tests with simulated Watson HTTP responses.
+$ python3 -m unittest -v test_emotion_detection.EmotionDetectorTests test_emotion_detection.FlaskTests
+test_blank_input_skips_watson (test_emotion_detection.EmotionDetectorTests.test_blank_input_skips_watson)
+Handle missing, empty, and whitespace-only text locally. ... ok
+test_five_dominant_emotions_and_output_format (test_emotion_detection.EmotionDetectorTests.test_five_dominant_emotions_and_output_format)
+Return exactly five scores and the correct dominant emotion. ... ok
+test_malformed_prediction (test_emotion_detection.EmotionDetectorTests.test_malformed_prediction)
+Report a Watson service error if the response lacks a prediction. ... ok
+test_network_timeout (test_emotion_detection.EmotionDetectorTests.test_network_timeout)
+Report a Watson service error if the request times out. ... ok
+test_watson_request_and_http_400 (test_emotion_detection.EmotionDetectorTests.test_watson_request_and_http_400)
+Use the expected Watson request and return null scores on HTTP 400. ... ok
+test_blank_input (test_emotion_detection.FlaskTests.test_blank_input)
+The route shows the course error message without a Watson request. ... ok
+test_formatted_result (test_emotion_detection.FlaskTests.test_formatted_result)
+The Flask route formats a Watson prediction for the browser. ... ok
+test_index (test_emotion_detection.FlaskTests.test_index)
+The homepage includes the form controls and result element. ... ok
+test_service_unavailable (test_emotion_detection.FlaskTests.test_service_unavailable)
+A service failure produces a response distinct from invalid input. ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.013s
+
+OK

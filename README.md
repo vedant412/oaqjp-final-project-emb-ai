@@ -62,6 +62,9 @@ Remove-Item Env:WATSON_LIVE_TESTS
 
 ## Collect the submission evidence
 
+The [submission folder](submission/README.md) includes the browser screenshots,
+verified terminal output, and a script for capturing the Watson lab results.
+
 Fork the IBM starter to your own public GitHub repository and clone your fork. Place
 the extracted project files at the root of that clone, keep its Git history, and commit
 and push the project files. Open `README.md` and
